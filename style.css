@@ -1,0 +1,59 @@
+@media only screen and (min-width: 0rem){
+
+    :root {
+        --white: hsl(0, 0%, 100%);
+        --slate300: hsl(212, 45%, 89%);
+        --slate500: hsl(216, 15%, 48%);
+        --slate900: hsl(218, 44%, 22%);
+        --bodyFont: 'Outfit';
+        --bodyFontWeight: 400;
+        --bodyFontWeightBold: 700;
+        --fontSize: 15px;
+    }
+
+    @font-face {
+    font-family: 'Outfit';
+    src: url('assets/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    body {
+        background-color: var(--slate300);
+        font-family: var(--bodyFont);
+        display: grid;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .qr-code {
+        padding: clamp(3.75rem, 15.044vw + 0.741rem, 12.25rem) 1rem;
+    }
+
+    .qr-code__container {
+        background: var(--white);
+        padding: 1rem;
+        text-align: center;
+        font-size: var(--fontSize);
+        border-radius: 1rem;
+        max-width: 15rem;
+        box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 3%);
+    }
+
+    .qr-code__title {
+        font-weight: var(--bodyFontWeightBold);
+        font-size: 20px;
+        color: var(--slate900);
+    }
+
+    .qr-code__content {
+        color: var(--slate500);
+    }
+
+    .qr-code__image {
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+}
