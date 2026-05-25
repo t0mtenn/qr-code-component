@@ -22,13 +22,13 @@
     body {
         background-color: var(--slate300);
         font-family: var(--bodyFont);
-        display: grid;
-        justify-content: center;
-        align-self: center;
     }
 
     .qr-code {
         padding: clamp(3.75rem, 15.044vw + 0.741rem, 12.25rem) 1rem;
+        display: grid;
+        justify-content: center;
+        align-self: center;
     }
 
     .qr-code__container {
@@ -55,5 +55,4 @@
         width: 100%;
         border-radius: .5rem;
     }
-
 }
